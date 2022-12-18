@@ -1,7 +1,15 @@
-.site-body {
+.body {
   font-family: "Roboto", sans-serif;
+  color: #455347;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
 }
-
+:root {
+  --title-color: #2e2f42;
+  --text-color: #434455;
+  --logo-web-color: #4d5ae5;
+}
 .list {
   list-style: none;
 }
@@ -11,8 +19,9 @@
 
 /*----header-----*/
 
-.header-logo {
-  font-family: "Raleway";
+.header-logo-studio,
+.header-logo-web {
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
@@ -20,37 +29,54 @@
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #2e2f42, #4d5ae5;
+}
+.header-logo-studio {
+  color: #2e2f42;
+}
+.header-logo-web {
+  color: var(--logo-web-color);
 }
 .header-list {
 }
 .header-item {
 }
 .header-link {
+  font-family: "Roboto Body Bold", sans-serif;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #2e2f42;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 .header-link:hover {
-  color: #ffffff;
+  color: #51d2ef;
 }
 .header-link:focus {
-  color: #ffffff;
+  color: #276ac6;
+}
+.header-mailto:hover,
+.header-tel:hover {
+  color: #17fa17;
 }
 .header-mailto,
 .header-tel {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #434455;
 }
 .main {
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*------hero--------*/
@@ -62,19 +88,19 @@
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
-  letter-spacing: 0.02em;
   color: #ffffff;
+  font-family: "Roboto Header 1", sans-serif;
 }
 .header-btn {
-  font-family: inherit;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 1.18;
+  line-height: 19px;
   display: flex;
   align-items: center;
   letter-spacing: 0.04em;
   color: #ffffff;
-  cursor: pointer;
+  background: #4d5ae5;
 }
 
 /*------text--------*/
@@ -86,20 +112,16 @@
 .text-item {
 }
 .text-title {
-  color: #2e2f42;
+  color: var(--title-color);
 }
 .title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
 }
 .text-quote {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--text-color);
 }
 
 /*----about-----*/
@@ -111,10 +133,11 @@
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
-  letter-spacing: 0.02em;
+  font-family: "Roboto Header 2";
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--title-color);
 }
+
 .about-list {
 }
 .about-item {
@@ -123,15 +146,16 @@
 /*------user--------*/
 
 .user {
+  background: #ffffff;
 }
 .user-logo {
   font-weight: 600;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
-  letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: #434455;
+  font-family: "Roboto body", sans-serif;
 }
 .user-list {
 }
@@ -139,10 +163,7 @@
 }
 .user-quote {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
   text-align: center;
-  letter-spacing: 0.02em;
   color: #434455;
 }
 
@@ -151,7 +172,8 @@
 .footer {
   background-color: #2e2f42;
 }
-.footer-logo {
+.footer-logo-web,
+.footer-logo-studio {
   font-family: "Raleway";
   font-weight: 800;
   font-size: 18px;
@@ -160,13 +182,15 @@
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5, #f4f4fd;
+}
+.footer-logo-studio {
+  color: #f4f4fd;
+}
+.footer-logo-web {
+  color: var(--logo-web-color);
 }
 .footer-quote {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #e7e9fc;
 }
 
@@ -175,14 +199,11 @@
 .features-btn {
   font-family: inherit;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
   color: #4d5ae5;
-  cursor: pointer;
 }
 .features-btn:hover {
   color: #ffffff;
@@ -191,12 +212,11 @@
   color: #ffffff;
 }
 .features-title {
-  color: #2e2f42;
+  color: var(--title-color);
 }
 
 .features-text {
   font-weight: 400;
-  font-size: 16px;
   line-height: 1.5;
-  color: #434455;
+  color: var(--text-color);
 }
