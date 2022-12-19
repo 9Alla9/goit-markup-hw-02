@@ -1,4 +1,4 @@
-.body {
+body {
   font-family: "Roboto", sans-serif;
   color: #455347;
   font-size: 16px;
@@ -36,12 +36,9 @@
 .header-logo-web {
   color: var(--logo-web-color);
 }
-.header-list {
-}
-.header-item {
-}
+/*----header-list{}-----*/
+/*----header-item {}-----*/
 .header-link {
-  font-family: "Roboto Body Bold", sans-serif;
   font-weight: 600;
   color: #2e2f42;
   flex: none;
@@ -63,8 +60,7 @@
   font-weight: 400;
   color: #434455;
 }
-.main {
-}
+/*----main{}-----*/
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -89,7 +85,6 @@
   line-height: 1.07;
   text-align: center;
   color: #ffffff;
-  font-family: "Roboto Header 1", sans-serif;
 }
 .header-btn {
   font-family: "Roboto", sans-serif;
@@ -101,16 +96,14 @@
   letter-spacing: 0.04em;
   color: #ffffff;
   background: #4d5ae5;
+  cursor: pointer;
 }
 
 /*------text--------*/
 
-.text {
-}
-.text-list {
-}
-.text-item {
-}
+/*------.text {}--------*/
+/*------.text-list {}-------*/
+/*------.text-item {}--------*/
 .text-title {
   color: var(--title-color);
 }
@@ -125,28 +118,24 @@
 }
 
 /*----about-----*/
-
-.about {
-}
+/*----.about {}----*/
 .about-title {
   font-weight: 600;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
-  font-family: "Roboto Header 2";
   text-transform: capitalize;
   color: var(--title-color);
 }
 
-.about-list {
-}
+/*----.about-list {}---*/
 .about-item {
 }
 
 /*------user--------*/
 
 .user {
-  background: #ffffff;
+  background: #f4f4fd;
 }
 .user-logo {
   font-weight: 600;
@@ -157,10 +146,8 @@
   color: #434455;
   font-family: "Roboto body", sans-serif;
 }
-.user-list {
-}
-.user-item {
-}
+/*---.user-list {}------*/
+/*-----.user-item {}-----*/
 .user-quote {
   font-weight: 400;
   text-align: center;
